@@ -5,8 +5,8 @@ from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
 
 # Import data (Make sure to parse dates. Consider setting index column to 'date'.)
-df = None
-
+df = pd.read_csv('fcc-forum-pageviews.csv', parse_dates=['date'], index_col='date')
+print(df.head(5))
 # Clean data
 df = None
 
